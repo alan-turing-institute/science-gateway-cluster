@@ -12,6 +12,14 @@ These files allow the creation of a mock pbs/torque-enabled cluster running on a
 
 ## Bash command line deployment instructions
 
+Copy the template JSON parameters to `azuredeploy.parameters.json` (which is ignored in `.gitignore`):
+
+```shell
+cp azuredeploy.parameters.template.json azuredeploy.parameters.json
+```
+
+Manually set a password and DNS name in `azuredeploy.parameters.json` (i.e. change the two strings `parameters.adminPassword.value` and `parameters.dnsLabelPrefix.value`).
+
 Run the following from a bash shell:
 
 ```shell
@@ -26,4 +34,3 @@ Note, progress of deploy can be monitored using
 ssh vm-admin@science-gateway-cluster.westeurope.cloudapp.azure.com
 tail -f /tmp/azuredeploy.log.*
 ```
-
