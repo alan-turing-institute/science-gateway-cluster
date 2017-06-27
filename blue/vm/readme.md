@@ -24,6 +24,6 @@ Note, progress of deploy can be monitored using
 
 ```shell
 ssh vm-admin@science-gateway-cluster.westeurope.cloudapp.azure.com
-tail -f /tmp/azuredeploy.log.1755
+tail -f /tmp/azuredeploy.log.*
 ```
 
