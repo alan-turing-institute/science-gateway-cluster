@@ -20,3 +20,10 @@ az group create --name $RESOURCE_GROUP --location westeurope
 az group deployment create --resource-group $RESOURCE_GROUP --template-file azuredeploy.json --parameters @azuredeploy.parameters.json
 ```
 
+Note, progress of deploy can be monitored using
+
+```shell
+ssh vm-admin@science-gateway-cluster.westeurope.cloudapp.azure.com
+tail -f /tmp/azuredeploy.log.1755
+```
+
