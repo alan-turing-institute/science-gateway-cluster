@@ -31,6 +31,8 @@ az group deployment create --resource-group $RESOURCE_GROUP --template-file azur
 Note, progress of deploy can be monitored using
 
 ```shell
-ssh vm-admin@science-gateway-cluster.westeurope.cloudapp.azure.com
+ssh vm-admin@<parameters.dnsLabelPrefix.value>.westeurope.cloudapp.azure.com
 tail -f /tmp/azuredeploy.log.*
 ```
+
+where `<parameters.dnsLabelPrefix.value>` corresponds to the name provided in `azuredeploy.parameters.json`.
