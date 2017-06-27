@@ -6,10 +6,10 @@
       "value": "vm-admin"
     },
     "adminPassword": {
-      "value": "Y781m5FF*0m!"
+      "value": "GEN-PASSWORD"
     },
     "dnsLabelPrefix": {
-      "value": "science-gateway-cluster"
+      "value": "GEN-UNIQUE"
     }
   }
 }
