@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "vm-admin"
+    },
+    "adminPassword": {
+      "value": "GEN-PASSWORD"
+    },
+    "vmName": {
+      "value": "science-gateway-cluster-bempp"
+    },
+    "vmSize": {
+      "value": "Standard_A1"
+    },
+    "customSetupScriptUri": {
+      "value": "https://raw.githubusercontent.com/alan-turing-institute/science-gateway-cluster/master/bempp/vm/azuredeploy.sh"
+    }
+  }
+}
