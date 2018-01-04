@@ -95,5 +95,6 @@ export PATH="/home/$ADMIN_USERNAME/miniconda/bin:$PATH"
 echo export PATH="/home/$ADMIN_USERNAME/miniconda/bin:\$PATH" >> /home/$ADMIN_USERNAME/.bashrc # set miniconda python for future ssh logins
 conda install --yes vtk >> /tmp/azuredeploy.log.$$
 /home/$ADMIN_USERNAME/miniconda/bin/pip install f90nml >> /tmp/azuredeploy.log.$$
+/home/$ADMIN_USERNAME/miniconda/bin/pip install pyfoam==0.6.8.1 >> /tmp/azuredeploy.log.$$
 
 exit 0
